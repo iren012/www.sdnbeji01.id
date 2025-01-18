@@ -1,0 +1,214 @@
+
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Styling header */
+header {
+    color: rgb(18, 131, 52);
+    padding: 15px 10px; /* Mengurangi padding */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(87, 167, 40, 1);
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+header:hover {
+    background-color: rgba(87, 167, 40, 0.9);
+}
+
+/* Logo styling */
+header .logo {
+    width: 100px; /* Menyesuaikan ukuran logo */
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+    transform: rotate(10deg);
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(40, 167, 69, 0.7);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Main content styling */
+main {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 25px; /* Mengurangi padding */
+    margin: 30px auto;
+    max-width: 800px; /* Memperkecil lebar maksimum */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+main:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for Pengumuman list */
+.pengumuman-list h2 {
+    font-size: 28px; /* Menyesuaikan ukuran judul */
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#pengumuman-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pengumuman-list li {
+    background-color: hsl(0, 0%, 98%);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#pengumuman-list li:hover {
+    background-color: #e8f5e9;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #218838;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Kontak Styling */
+.kontak p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.kontak a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kontak a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+        margin: 20px auto;
+        max-width: 90%; /* Lebar lebih fleksibel pada perangkat kecil */
+    }
+
+    .pengumuman-list h2 {
+        font-size: 24px;
+    }
+
+    .kontak p {
+        font-size: 14px;
+    }
+}
+
+/* Styling for Selamat Datang section */
+#selamat-datang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Mengurangi tinggi agar lebih proporsional */
+    text-align: center;
+    padding: 15px; /* Menambahkan padding untuk ketenangan visual */
+    box-sizing: border-box;
+}
+
+#selamat-datang h1 {
+    font-size: 2.5em; /* Mengurangi ukuran judul */
+    color: #93db34;
+    margin-bottom: 10px;
+}
+
+#selamat-datang p {
+    font-size: 1.3em; /* Mengurangi ukuran teks */
+    color: #93db34;
+    font-weight: bold;
+}
+
+/* Gambar styling */
+img, .foto, .foto-profil {
+    width: 100%;
+    max-width: 350px; /* Mengurangi ukuran gambar */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foto:hover, .foto-profil:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    #map-container {
+        height: 300px;
+    }
+}
